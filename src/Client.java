@@ -48,16 +48,16 @@ public class Client {
 			Iterator<Compte> iterator_compte = getComptes().iterator();
 			while(iterator_compte.hasNext()) {
 				Compte compte_client = iterator_compte.next();
-				text += "\nCompte nï¿½" + compte_client.getnumero() + " - Solde " + compte_client.getsolde();
+				text += "\nCompte n°" + compte_client.getnumero() + " - Solde " + compte_client.getsolde();
 			}
 		} else {
-			text += " pas de compte rattachï¿½ ï¿½ ce client";
+			text += "\npas de compte rattaché à ce client";
 		}
 		
 		return text;
 	}
 	
-	public static void main(String [] args){
+	/*public static void main(String [] args){
 		Client c1 = new Client(1,"Martin");
 		System.out.println(c1);
 		Compte com1 = new Compte(10,c1);
@@ -67,6 +67,6 @@ public class Client {
 		System.out.println(c1);
 		com1.credit(500.0);
 		System.out.println(c1);
-	}
+	}*/
 	
 }
