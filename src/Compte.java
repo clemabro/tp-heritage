@@ -23,7 +23,7 @@ public class Compte {
 		return numero;
 	}
 	public String toString() {
-		return "Client " + numero + " - client" + client.getNom() + "- solde " + solde;
+		return "Client " + numero + " - client " + client.getNom() + " - Solde " + solde;
 	}
 	public static void main(String[] args) {
 		
