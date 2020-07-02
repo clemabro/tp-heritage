@@ -48,10 +48,10 @@ public class Client {
 			Iterator<Compte> iterator_compte = getComptes().iterator();
 			while(iterator_compte.hasNext()) {
 				Compte compte_client = iterator_compte.next();
-				text += "\nCompte n°" + compte_client.getnumero() + " - Solde " + compte_client.getsolde();
+				text += "\nCompte nï¿½" + compte_client.getnumero() + " - Solde " + compte_client.getsolde();
 			}
 		} else {
-			text += " pas de compte rattaché à ce client";
+			text += " pas de compte rattachï¿½ ï¿½ ce client";
 		}
 		
 		return text;

@@ -14,21 +14,28 @@ public class Compte {
 	{	
 		return solde;
 	}
+
 	public Client getClient()
 	{	
 		return client;
 	}
+
 	public long getnumero()
 	{	
 		return numero;
 	}
+
 	public String toString() {
 		return "Client " + numero + " - client " + client.getNom() + " - Solde " + solde;
 	}
 	public void credit(double somme) {
 		this.solde += somme;
 	}
-	
+
+	public void debit(double somme) {
+		this.solde -= somme;
+	}
+
 	public static void main(String[] args) {
 		Client c1 = new Client(1,"Martin");
 		Client c2 = new Client(2,"Dupond");
