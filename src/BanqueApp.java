@@ -11,7 +11,7 @@ public class BanqueApp {
 		getClient().add(c);
 	}
 	
-	public ArrayList<Client> getClient() {
+	public ArrayList<Client> getClient() {//ArrayList de Client
 		return client;
 	}
 	
